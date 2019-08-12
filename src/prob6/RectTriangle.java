@@ -34,7 +34,7 @@ public class RectTriangle extends Shape implements Resizable{
 
 	@Override
 	protected double getPerimeter() {		
-		return width + height + Math.sqrt((Math.pow(width, 2)) * (Math.pow(height, 2)));
+		return (width + height) + Math.sqrt((Math.pow(width, 2)) * (Math.pow(height, 2)));
 	}
 
 	@Override
