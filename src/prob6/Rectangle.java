@@ -2,20 +2,24 @@ package prob6;
 
 public class Rectangle extends Shape {
 
-	public Rectangle(int i, int j) {
-		// TODO Auto-generated constructor stub
+	private double width;
+	private double height;
+	
+	public Rectangle(double width, double height) {
+		this.width  = width;
+		this.height = height;
 	}
 
 	@Override
-	public String getArea() {
+	public double getArea() {
 		// TODO Auto-generated method stub
-		return null;
+		return (width * height);
 	}
 
 	@Override
-	protected String getPerimeter() {
+	protected double getPerimeter() {
 		// TODO Auto-generated method stub
-		return null;
+		return (width + height) * 2;
 	}
 
 }
